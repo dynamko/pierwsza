@@ -1,0 +1,8 @@
+button {
+    all: unset;
+    background-color: purple;
+    color: white;
+}
+button:hover{
+    background-color: blueviolet;
+}
