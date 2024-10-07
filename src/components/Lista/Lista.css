@@ -1,0 +1,41 @@
+body {
+    .zrobione {
+        text-decoration: line-through;
+        color: rgb(204, 204, 204);
+    }
+    font-size: large;
+}
+button {
+    font-size: small;
+    all: unset;
+}
+button:hover{
+    background-color: white;
+    color:black;
+    cursor:pointer;
+}
+.wpis {
+    background-color: rgb(233, 233, 233);
+    border-radius: 15px;
+    border: none;
+    height: 40px;
+    width: 400px;
+    text-align: center;
+}
+.buttDodaj {
+    background-color: rgb(255, 152, 152);
+    border-radius: 15px;
+    height: 40px;
+    width: 100px;
+    margin-left: 20px;
+}
+.buttDel {
+    position:absolute;
+    border-radius: 15px;
+    height: 40px;
+    width: 50px;
+    right:38%;
+}
+.buttDel:hover {
+    background-color: rgb(233, 233, 233);
+}

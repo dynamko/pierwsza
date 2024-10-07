@@ -4,6 +4,7 @@ function Iterator() {
     const [number, setNumber] = useState(2)
     const [showMessage, setShowMessage] = useState(false)
     const[string, setString] = useState(true)
+    const [numberList, setNumbersList] = useState([5, 4, 32, 65, 75])
 
     useEffect(()=>{
         console.log('wykonany use effect')
@@ -28,6 +29,10 @@ function Iterator() {
         <br />
         <input type="text" onChange={(e)=>setString(e.target.value)}/>
         <p>string value: {string}</p>
+        <br />
+        <br />
+        {numberList.map((element) => element + ', ')}
+        <button onClick={()=>setNumbersList(prev => [...prev, prev[2]])}>dodaj 100 do tablicy</button>
     </div>
 }
 export default Iterator
